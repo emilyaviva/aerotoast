@@ -27,3 +27,6 @@ build/Release
 node_modules
 .gatsby-context.js
 .sass-cache/
+
+# Public output of Gatsby (use `npm run deploy` to build & deploy public)
+public
