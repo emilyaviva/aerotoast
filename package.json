@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "aerotoast",
+  "description": "AeroToast",
+  "version": "0.0.1",
+  "author": {
+    "name": "Emily Aviva Kapor-Mater",
+    "email": "emily@emilyaviva.com",
+    "url": "https://www.emilyaviva.com"
+  },
+  "dependencies": {
+    "front-matter": "^2.0.7",
+    "gatsby": "^0.12.6",
+    "history": "^2.0.2",
+    "lodash": "^4.16.1",
+    "object-assign": "^4.1.0",
+    "react-headroom": "^2.1.2",
+    "react-helmet": "^3.1.0",
+    "react-typography": "^0.12.0",
+    "toml-js": "0.0.8",
+    "typography": "^0.13.0",
+    "typography-plugin-code": "^0.13.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "standard": "^8.1.0"
+  },
+  "keywords": [
+    "gatsby",
+    "toast",
+    "drone"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilyaviva/aerotoast"
+  },
+  "bugs": {
+    "url": "https://github.com/emilyaviva/aerotoast/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "n/a",
+  "scripts": {
+    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "clean": "rm -rf public/*",
+    "lint": "standard --verbose | snazzy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve-build": "NODE_ENV=production gatsby build && gatsby serve-build"
+  }
+}

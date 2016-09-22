@@ -1,0 +1,45 @@
+.SiteHeader
+  font-family: $header-family
+  font-weight: 400
+  height: inherit
+  background: $brand-primary
+  padding: 12px 0 24px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  @media (max-width: $mobile)
+    display: block
+  .site-name
+    height: 100px
+    margin-left: 12px
+    h1,
+    h2
+      color: $brand-white
+  .site-nav
+    height: 40px
+    margin-right: 12px
+    padding-top: 6px
+    ul
+      display: flex
+      flex-direction: row
+      li
+        list-style-type: none
+        margin-left: 16px
+        opacity: 0.5
+        &:first-child
+          margin-left: 0
+        &:hover
+          opacity: 1
+    @media (max-width: $mobile)
+      padding-top: 12px
+      width: auto
+      ul
+        justify-content: space-between
+        margin-left: 12px
+        li
+          margin-left: 0
+
+  a
+    text-decoration: none
+    color: invert($header-color)
