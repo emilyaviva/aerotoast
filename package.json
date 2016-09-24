@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "aerotoast",
-  "description": "AeroToast",
+  "description": "AeroToast website",
   "version": "0.0.1",
   "author": {
     "name": "Emily Aviva Kapor-Mater",
@@ -9,6 +9,7 @@
     "url": "https://www.emilyaviva.com"
   },
   "dependencies": {
+    "bulma": "^0.2.0",
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
     "history": "^2.0.2",
@@ -16,17 +17,16 @@
     "object-assign": "^4.1.0",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
-    "react-typography": "^0.12.0",
-    "toml-js": "0.0.8",
-    "typography": "^0.13.0",
-    "typography-plugin-code": "^0.13.0"
+    "toml-js": "0.0.8"
   },
   "devDependencies": {
     "gh-pages": "^0.11.0",
+    "snazzy": "^5.0.0",
     "standard": "^8.1.0"
   },
   "keywords": [
     "gatsby",
+    "aerotoast",
     "toast",
     "drone"
   ],

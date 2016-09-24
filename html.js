@@ -1,8 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { prefixLink } from 'gatsby-helpers'
-import { GoogleFont } from 'react-typography'
-import typography from './utils/typography'
 
 const BUILD_TIME = new Date().getTime()
 const head = Helmet.rewind()
@@ -18,7 +16,6 @@ const Html = ({ body }) =>
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       {head.title.toComponent()}
       {head.meta.toComponent()}
-      <GoogleFont typography={typography} />
       {css}
     </head>
     <body>
